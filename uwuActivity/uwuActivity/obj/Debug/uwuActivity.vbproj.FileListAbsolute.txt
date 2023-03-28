@@ -1,0 +1,15 @@
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.exe
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.pdb
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.xml
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\ResolveAssemblyReference.cache
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.Resources.resources
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.vbproj.GenerateResource.Cache
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.exe
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.xml
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.pdb
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.frmRecords.resources
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.AddRecords.resources
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.exe.manifest
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.application
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.exe.manifest
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.application
