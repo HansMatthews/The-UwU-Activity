@@ -1,15 +1,30 @@
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.exe
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.pdb
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.xml
 C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\ResolveAssemblyReference.cache
 C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.Resources.resources
 C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.vbproj.GenerateResource.Cache
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.exe
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.xml
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.pdb
 C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.frmRecords.resources
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.AddRecords.resources
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.exe.manifest
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\uwuActivity.application
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.exe.manifest
-C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.application
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.exe.manifest
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.application
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.exe
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.pdb
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.xml
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.frmAddRecords.resources
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.exe.manifest
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.application
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.exe
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.xml
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.pdb
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.exe
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.xml
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.pdb
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.exe.manifest
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.application
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.exe
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.pdb
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\bin\Debug\Anuta Record App.xml
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\ResolveAssemblyReference.cache
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.frmAddRecords.resources
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.frmRecords.resources
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.Resources.resources
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.vbproj.GenerateResource.Cache
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.exe.manifest
+B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.application

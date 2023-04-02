@@ -26,22 +26,27 @@ Partial Class frmRecords
         Me.lvRecords = New System.Windows.Forms.ListView
         Me.chSNumber = New System.Windows.Forms.ColumnHeader
         Me.chSName = New System.Windows.Forms.ColumnHeader
-        Me.ColumnHeader3 = New System.Windows.Forms.ColumnHeader
-        Me.ColumnHeader4 = New System.Windows.Forms.ColumnHeader
-        Me.ColumnHeader5 = New System.Windows.Forms.ColumnHeader
-        Me.ColumnHeader7 = New System.Windows.Forms.ColumnHeader
+        Me.chCc103 = New System.Windows.Forms.ColumnHeader
+        Me.chIs101 = New System.Windows.Forms.ColumnHeader
+        Me.chWebdev = New System.Windows.Forms.ColumnHeader
+        Me.chPe = New System.Windows.Forms.ColumnHeader
+        Me.chAve = New System.Windows.Forms.ColumnHeader
         Me.btnClear = New System.Windows.Forms.Button
+        Me.lblCc103 = New System.Windows.Forms.Label
+        Me.lblIs101 = New System.Windows.Forms.Label
+        Me.lblWebdev = New System.Windows.Forms.Label
+        Me.lblPe = New System.Windows.Forms.Label
         Me.SuspendLayout()
         '
         'lvRecords
         '
-        Me.lvRecords.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chSNumber, Me.chSName, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader7})
+        Me.lvRecords.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chSNumber, Me.chSName, Me.chCc103, Me.chIs101, Me.chWebdev, Me.chPe, Me.chAve})
         Me.lvRecords.FullRowSelect = True
         Me.lvRecords.GridLines = True
         Me.lvRecords.HoverSelection = True
-        Me.lvRecords.Location = New System.Drawing.Point(12, 12)
+        Me.lvRecords.Location = New System.Drawing.Point(11, 12)
         Me.lvRecords.Name = "lvRecords"
-        Me.lvRecords.Size = New System.Drawing.Size(431, 365)
+        Me.lvRecords.Size = New System.Drawing.Size(594, 365)
         Me.lvRecords.TabIndex = 0
         Me.lvRecords.UseCompatibleStateImageBehavior = False
         Me.lvRecords.View = System.Windows.Forms.View.Details
@@ -49,7 +54,7 @@ Partial Class frmRecords
         'chSNumber
         '
         Me.chSNumber.Text = "Student Number"
-        Me.chSNumber.Width = 70
+        Me.chSNumber.Width = 90
         '
         'chSName
         '
@@ -57,44 +62,85 @@ Partial Class frmRecords
         Me.chSName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.chSName.Width = 200
         '
-        'ColumnHeader3
+        'chCc103
         '
-        Me.ColumnHeader3.Text = "IS 101"
-        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader3.Width = 40
+        Me.chCc103.Text = "CC 103"
+        Me.chCc103.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'ColumnHeader4
+        'chIs101
         '
-        Me.ColumnHeader4.Text = "CC 103"
-        Me.ColumnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader4.Width = 40
+        Me.chIs101.Text = "IS 101"
+        Me.chIs101.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'ColumnHeader5
+        'chWebdev
         '
-        Me.ColumnHeader5.Text = "WebDev"
-        Me.ColumnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader5.Width = 40
+        Me.chWebdev.Text = "WebDev"
+        Me.chWebdev.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'ColumnHeader7
+        'chPe
         '
-        Me.ColumnHeader7.Text = "AVE"
-        Me.ColumnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader7.Width = 40
+        Me.chPe.Text = "PE"
+        Me.chPe.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'chAve
+        '
+        Me.chAve.Text = "AVE"
+        Me.chAve.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(449, 12)
+        Me.btnClear.Location = New System.Drawing.Point(12, 383)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(166, 54)
+        Me.btnClear.Size = New System.Drawing.Size(122, 54)
         Me.btnClear.TabIndex = 1
         Me.btnClear.Text = "Dispose Records"
         Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'lblCc103
+        '
+        Me.lblCc103.AutoSize = True
+        Me.lblCc103.Location = New System.Drawing.Point(314, 380)
+        Me.lblCc103.Name = "lblCc103"
+        Me.lblCc103.Size = New System.Drawing.Size(39, 13)
+        Me.lblCc103.TabIndex = 2
+        Me.lblCc103.Text = "Label1"
+        '
+        'lblIs101
+        '
+        Me.lblIs101.AutoSize = True
+        Me.lblIs101.Location = New System.Drawing.Point(376, 380)
+        Me.lblIs101.Name = "lblIs101"
+        Me.lblIs101.Size = New System.Drawing.Size(39, 13)
+        Me.lblIs101.TabIndex = 3
+        Me.lblIs101.Text = "Label2"
+        '
+        'lblWebdev
+        '
+        Me.lblWebdev.AutoSize = True
+        Me.lblWebdev.Location = New System.Drawing.Point(433, 380)
+        Me.lblWebdev.Name = "lblWebdev"
+        Me.lblWebdev.Size = New System.Drawing.Size(39, 13)
+        Me.lblWebdev.TabIndex = 4
+        Me.lblWebdev.Text = "Label3"
+        '
+        'lblPe
+        '
+        Me.lblPe.AutoSize = True
+        Me.lblPe.Location = New System.Drawing.Point(489, 380)
+        Me.lblPe.Name = "lblPe"
+        Me.lblPe.Size = New System.Drawing.Size(39, 13)
+        Me.lblPe.TabIndex = 5
+        Me.lblPe.Text = "Label3"
         '
         'frmRecords
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(623, 389)
+        Me.ClientSize = New System.Drawing.Size(615, 443)
+        Me.Controls.Add(Me.lblPe)
+        Me.Controls.Add(Me.lblWebdev)
+        Me.Controls.Add(Me.lblIs101)
+        Me.Controls.Add(Me.lblCc103)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.lvRecords)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -103,15 +149,21 @@ Partial Class frmRecords
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Records"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents lvRecords As System.Windows.Forms.ListView
     Friend WithEvents chSNumber As System.Windows.Forms.ColumnHeader
     Friend WithEvents chSName As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ColumnHeader7 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chCc103 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chIs101 As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chWebdev As System.Windows.Forms.ColumnHeader
     Friend WithEvents btnClear As System.Windows.Forms.Button
+    Friend WithEvents lblCc103 As System.Windows.Forms.Label
+    Friend WithEvents lblIs101 As System.Windows.Forms.Label
+    Friend WithEvents lblWebdev As System.Windows.Forms.Label
+    Friend WithEvents chPe As System.Windows.Forms.ColumnHeader
+    Friend WithEvents lblPe As System.Windows.Forms.Label
+    Friend WithEvents chAve As System.Windows.Forms.ColumnHeader
 
 End Class

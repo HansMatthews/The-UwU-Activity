@@ -24,18 +24,20 @@ Partial Class frmAddRecords
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAddRecords))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.txtStName = New System.Windows.Forms.TextBox
+        Me.txtStNum = New System.Windows.Forms.TextBox
         Me.Label2 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.txtWebdev = New System.Windows.Forms.TextBox
+        Me.txtIs101 = New System.Windows.Forms.TextBox
+        Me.txtCc103 = New System.Windows.Forms.TextBox
+        Me.Label5 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
-        Me.Label5 = New System.Windows.Forms.Label
-        Me.txtStNum = New System.Windows.Forms.TextBox
-        Me.txtStName = New System.Windows.Forms.TextBox
-        Me.txtCc103 = New System.Windows.Forms.TextBox
-        Me.txtIs101 = New System.Windows.Forms.TextBox
-        Me.txtWebdev = New System.Windows.Forms.TextBox
         Me.btnGetRec = New System.Windows.Forms.Button
+        Me.txtPe = New System.Windows.Forms.TextBox
+        Me.Label6 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -53,8 +55,42 @@ Partial Class frmAddRecords
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Student"
         '
+        'txtStName
+        '
+        Me.txtStName.Location = New System.Drawing.Point(87, 58)
+        Me.txtStName.Name = "txtStName"
+        Me.txtStName.Size = New System.Drawing.Size(100, 20)
+        Me.txtStName.TabIndex = 3
+        '
+        'txtStNum
+        '
+        Me.txtStNum.Location = New System.Drawing.Point(87, 28)
+        Me.txtStNum.Name = "txtStNum"
+        Me.txtStNum.Size = New System.Drawing.Size(100, 20)
+        Me.txtStNum.TabIndex = 2
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(17, 61)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(35, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Name"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(17, 31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(64, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Student No."
+        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.txtPe)
+        Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.txtWebdev)
         Me.GroupBox2.Controls.Add(Me.txtIs101)
         Me.GroupBox2.Controls.Add(Me.txtCc103)
@@ -68,23 +104,35 @@ Partial Class frmAddRecords
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Grades"
         '
-        'Label1
+        'txtWebdev
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(17, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Student No."
+        Me.txtWebdev.Location = New System.Drawing.Point(87, 87)
+        Me.txtWebdev.Name = "txtWebdev"
+        Me.txtWebdev.Size = New System.Drawing.Size(100, 20)
+        Me.txtWebdev.TabIndex = 6
         '
-        'Label2
+        'txtIs101
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(17, 61)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Name"
+        Me.txtIs101.Location = New System.Drawing.Point(87, 58)
+        Me.txtIs101.Name = "txtIs101"
+        Me.txtIs101.Size = New System.Drawing.Size(100, 20)
+        Me.txtIs101.TabIndex = 5
+        '
+        'txtCc103
+        '
+        Me.txtCc103.Location = New System.Drawing.Point(87, 28)
+        Me.txtCc103.Name = "txtCc103"
+        Me.txtCc103.Size = New System.Drawing.Size(100, 20)
+        Me.txtCc103.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(17, 90)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(54, 13)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "WEBDEV"
         '
         'Label3
         '
@@ -104,50 +152,6 @@ Partial Class frmAddRecords
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "CC103"
         '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(21, 90)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "WEBDEV"
-        '
-        'txtStNum
-        '
-        Me.txtStNum.Location = New System.Drawing.Point(87, 28)
-        Me.txtStNum.Name = "txtStNum"
-        Me.txtStNum.Size = New System.Drawing.Size(100, 20)
-        Me.txtStNum.TabIndex = 2
-        '
-        'txtStName
-        '
-        Me.txtStName.Location = New System.Drawing.Point(87, 58)
-        Me.txtStName.Name = "txtStName"
-        Me.txtStName.Size = New System.Drawing.Size(100, 20)
-        Me.txtStName.TabIndex = 3
-        '
-        'txtCc103
-        '
-        Me.txtCc103.Location = New System.Drawing.Point(87, 28)
-        Me.txtCc103.Name = "txtCc103"
-        Me.txtCc103.Size = New System.Drawing.Size(100, 20)
-        Me.txtCc103.TabIndex = 4
-        '
-        'txtIs101
-        '
-        Me.txtIs101.Location = New System.Drawing.Point(87, 58)
-        Me.txtIs101.Name = "txtIs101"
-        Me.txtIs101.Size = New System.Drawing.Size(100, 20)
-        Me.txtIs101.TabIndex = 5
-        '
-        'txtWebdev
-        '
-        Me.txtWebdev.Location = New System.Drawing.Point(87, 87)
-        Me.txtWebdev.Name = "txtWebdev"
-        Me.txtWebdev.Size = New System.Drawing.Size(100, 20)
-        Me.txtWebdev.TabIndex = 6
-        '
         'btnGetRec
         '
         Me.btnGetRec.Location = New System.Drawing.Point(104, 319)
@@ -156,6 +160,22 @@ Partial Class frmAddRecords
         Me.btnGetRec.TabIndex = 2
         Me.btnGetRec.Text = "Add Record"
         Me.btnGetRec.UseVisualStyleBackColor = True
+        '
+        'txtPe
+        '
+        Me.txtPe.Location = New System.Drawing.Point(87, 113)
+        Me.txtPe.Name = "txtPe"
+        Me.txtPe.Size = New System.Drawing.Size(100, 20)
+        Me.txtPe.TabIndex = 8
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(17, 116)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(21, 13)
+        Me.Label6.TabIndex = 7
+        Me.Label6.Text = "PE"
         '
         'frmAddRecords
         '
@@ -166,7 +186,9 @@ Partial Class frmAddRecords
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "frmAddRecords"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AddRecords"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -188,4 +210,6 @@ Partial Class frmAddRecords
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents btnGetRec As System.Windows.Forms.Button
+    Friend WithEvents txtPe As System.Windows.Forms.TextBox
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 End Class
