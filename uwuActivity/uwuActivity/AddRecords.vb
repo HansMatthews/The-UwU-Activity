@@ -13,9 +13,14 @@
             recordsForm = New frmRecords
         End If
 
-        recordsForm.AddRecords(sNum, sName, cc103, is101, webdev, pe)
+        recordsForm.Records(sNum, sName, cc103, is101, webdev, pe)
 
         recordsForm.Show()
+        ClearData()
+
+    End Sub
+
+    Private Sub ClearData()
 
         txtStNum.Text = ""
         txtStName.Text = ""
