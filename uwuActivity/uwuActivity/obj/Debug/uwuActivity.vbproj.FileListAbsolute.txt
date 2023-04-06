@@ -28,3 +28,4 @@ B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.Resources
 B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.vbproj.GenerateResource.Cache
 B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.exe.manifest
 B:\22121473\Visual Basic\uwuActivity\uwuActivity\obj\Debug\Anuta Record App.application
+C:\ZED\Visual Basic\uwuActivity\uwuActivity\obj\Debug\uwuActivity.Edit.resources

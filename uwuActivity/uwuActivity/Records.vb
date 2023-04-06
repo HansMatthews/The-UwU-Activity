@@ -1,14 +1,14 @@
 ﻿Public Class frmRecords
 
-    Private cc103Total As Double = 0
-    Private is101Total As Double = 0
-    Private webdevTotal As Double = 0
-    Private peTotal As Double = 0
-    Private i As Integer = 0
+    Public cc103Total As Double = 0
+    Public is101Total As Double = 0
+    Public webdevTotal As Double = 0
+    Public peTotal As Double = 0
+    Public i As Integer = 0
 
     Private selectedItem As ListViewItem
 
-    Private Sub SubAveComp()
+    Public Sub SubAveComp()
 
         If i > 0 Then
             Dim cc103Ave As Double = cc103Total / i
@@ -27,8 +27,6 @@
     End Sub
 
     Public Sub Records(ByVal sNum As String, ByVal sName As String, ByVal cc103 As Double, ByVal is101 As Double, ByVal webdev As Double, ByVal pe As Double)
-        Dim ave As Double = (cc103 + is101 + webdev + pe) / 4
-        ave = Format(Val(ave), "0.00")
 
         Dim newItem As New ListViewItem()
 
@@ -38,7 +36,6 @@
         newItem.SubItems.Add(is101.ToString())
         newItem.SubItems.Add(webdev.ToString())
         newItem.SubItems.Add(pe.ToString())
-        newItem.SubItems.Add(ave.ToString())
 
         lvRecords.Items.Add(newItem)
 
@@ -47,6 +44,10 @@
         webdevTotal += webdev
         peTotal += pe
         i += 1
+
+        Dim ave As Double = (cc103Total + is101Total + webdevTotal + peTotal) / (i * 4)
+        ave = Format(Val(ave), "0.00")
+        newItem.SubItems.Add(ave.ToString())
 
         SubAveComp()
 
@@ -64,7 +65,7 @@
     Private Sub btnDelete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnDelete.Click
 
         If btnDelete.Tag IsNot Nothing Then
-            If MessageBox.Show("Are you sure you want to delete this row?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+            If MessageBox.Show("Are you sure you want to delete this student?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
                 Dim item As ListViewItem = CType(btnDelete.Tag, ListViewItem)
 
                 cc103Total -= Val(item.SubItems(2).Text)
@@ -81,16 +82,33 @@
         End If
     End Sub
 
-    Private Sub lvRecords_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lvRecords.SelectedIndexChanged
+    Public Sub lvRecords_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lvRecords.SelectedIndexChanged
 
         selectedItem = lvRecords.SelectedItems.Cast(Of ListViewItem)().FirstOrDefault()
         btnDelete.Tag = selectedItem
+        btnEdit.Tag = selectedItem
 
-        If lvRecords.SelectedItems.Count > 0 Then
-            btnDelete.Tag = lvRecords.SelectedItems(0)
+    End Sub
+
+    Private Sub btnEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEdit.Click
+
+        If btnEdit.Tag IsNot Nothing Then
+            Dim selectedItem As ListViewItem = Me.lvRecords.SelectedItems(0)
+
+            Dim editForm As New Edit(selectedItem)
+            editForm.btnUpdate.Tag = selectedItem
+
+            editForm.Show()
+
+            editForm.txtStNum.Text = selectedItem.Text
+            editForm.txtStName.Text = selectedItem.SubItems(1).Text
+            editForm.txtCc103.Text = selectedItem.SubItems(2).Text
+            editForm.txtIs101.Text = selectedItem.SubItems(3).Text
+            editForm.txtWebdev.Text = selectedItem.SubItems(4).Text
+            editForm.txtPe.Text = selectedItem.SubItems(5).Text
+
         Else
-            btnDelete.Tag = Nothing
+            MessageBox.Show("Please select a record to edit")
         End If
-
     End Sub
 End Class

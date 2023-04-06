@@ -53,14 +53,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Anuta Record App.exe" size="1265664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Anuta Record App.exe" size="1271296">
       <assemblyIdentity name="Anuta Record App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2OqsHqVsgXanzXAo3ECAvyzuyu8=</dsig:DigestValue>
+        <dsig:DigestValue>CVy3WeESs8f+HLupVIcM2w5WSC4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
